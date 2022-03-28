@@ -1,0 +1,66 @@
+<div>
+  <h1>My Heroes</h1>
+  <div class="addHeroes">
+    <label>Hero name:</label> <input class="btnA" #heroName />
+    <button class="addBtn" (click)="add(heroName.value); heroName.value = ''">
+      Add
+    </button>
+  </div>
+</div>
+
+<div class="c">
+  <div>
+    <div class="mo">
+      <div class="info" *ngIf="selectedHero">
+        <h2>{{ selectedHero.name | uppercase }}</h2>
+
+        <div class="display-info">
+          <div class="a">
+            <label><strong>ID: </strong></label>
+            <span>{{ selectedHero.id }}</span>
+            <br />
+          </div>
+
+          <div class="a">
+            <label><strong>Age: </strong></label>
+            <span>{{ selectedHero.age }}</span>
+            <br />
+          </div>
+
+          <div class="a">
+            <label><strong>Gender: </strong></label>
+            <span>{{ selectedHero.gender }}</span>
+            <br />
+          </div>
+
+          <div class="bios a">
+            <label><strong>Biography: </strong></label>
+            <span class="txt">{{ selectedHero.shortBio }}</span>
+            <br />
+          </div>
+        </div>
+
+        <button class="viewBtn" (click)="gotoDetail()">View More/Edit</button>
+      </div>
+
+      <div class="main">
+        <ul class="heroes">
+          <li
+            *ngFor="let hero of heroes"
+            (click)="onSelect(hero)"
+            [class.selected]="hero === selectedHero"
+          >
+            <span class="badge">{{ hero.id }}</span>
+            <span>{{ hero.name }}</span>
+            <button
+              class="delete"
+              (click)="delete(hero); $event.stopPropagation()"
+            >
+              x
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

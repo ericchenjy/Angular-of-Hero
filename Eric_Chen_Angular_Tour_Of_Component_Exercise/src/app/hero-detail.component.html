@@ -1,0 +1,38 @@
+<div *ngIf="hero">
+  <div class="infoC">
+    <h1 class="title">{{ hero.name }} Details!</h1>
+    <div>
+      <label class="ids">ID: </label>
+      {{ hero.id }}
+    </div>
+    <div>
+      <label>Name: </label>
+      <input [(ngModel)]="hero.name" placeholder="name" />
+    </div>
+    <div>
+      <label> Age: </label>
+      <input [(ngModel)]="hero.age" placeholder="age" />
+    </div>
+    <div>
+      <label> Gener: </label>
+      <input [(ngModel)]="hero.gender" placeholder="gender" />
+    </div>
+    <div class="big-text">
+      <label class="bios"> Biography: </label>
+      <textarea
+        id="Message"
+        name="Message"
+        class="message"
+        rows="10"
+        maxlength="3000"
+        [(ngModel)]="hero.bio"
+        placeholder="bio"
+        required
+      ></textarea>
+    </div>
+    <div>
+      <button (click)="goBack()"><strong>Back</strong></button>
+      <button (click)="save()"><strong>Save</strong></button>
+    </div>
+  </div>
+</div>

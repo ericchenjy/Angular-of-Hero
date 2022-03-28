@@ -1,0 +1,109 @@
+div {
+  width: 100%;
+  text-align: center;
+}
+h1 {
+  color: #607d8b;
+}
+
+.infoC label {
+  display: inline-block;
+  width: 3em;
+  margin: 0.5em 0;
+  color: #607d8b;
+  font-weight: bold;
+  text-align: left;
+  margin-right: 5%;
+  margin-top: 1em;
+}
+
+input {
+  height: 2em;
+  font-size: 1em;
+  width: 30%;
+  border-color: #607d8b;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.message {
+  margin-top: 0.5em;
+  width: 30%;
+  border-color: #607d8b;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+button {
+  margin-top: 2.5%;
+  font-family: Arial;
+  background-color: #455a64;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1%;
+  margin-left: 1%;
+
+  /*cursor: hand;*/
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+@media (max-width: 750px) {
+  .infoC label {
+    display: inline-block;
+    width: 3em;
+    margin: 0.5em 0;
+    color: #607d8b;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 10%;
+    margin-top: 1em;
+  }
+
+  input {
+    height: 2em;
+    font-size: 1em;
+    width: 50%;
+  }
+
+  .message {
+    margin-top: 0.5em;
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .infoC label {
+    display: inline-block;
+    width: 3em;
+    margin: 0.5em 0;
+    color: #607d8b;
+    font-weight: bold;
+    text-align: left;
+    margin-right: 15%;
+    margin-top: 1em;
+  }
+
+  input {
+    height: 2em;
+    font-size: 1em;
+    width: 50%;
+  }
+
+  .message {
+    margin-top: 0.5em;
+    width: 50%;
+  }
+}

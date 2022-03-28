@@ -1,0 +1,330 @@
+.c {
+  margin-bottom: 15%;
+}
+
+h1 {
+  text-align: center;
+  color: #455a64;
+  margin-top: 5%;
+  margin-bottom: -3%;
+}
+
+h2 {
+  color: #242f34;
+}
+
+.btnA {
+  max-width: 30%;
+}
+
+.addHeroes {
+  margin-top: 3.5em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #607d8b;
+}
+
+.addBtn {
+  margin-top: 1.5em;
+  background-color: #455a64;
+  color: #ffffff;
+  padding: 4px 15px;
+  border-radius: 5px;
+  margin-right: 1%;
+  font-weight: bold;
+}
+
+.mo {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.a {
+  margin-bottom: 10px;
+}
+.info {
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.display-info label {
+  color: #242f34;
+  float: left;
+  text-align: left;
+}
+
+.display-info span {
+  float: right;
+  color: #455a64;
+}
+
+.bios {
+  width: 400px;
+}
+
+.display-info .txt {
+  float: left;
+  text-align: left;
+  margin-top: 3px;
+}
+
+.main {
+  margin-top: 3%;
+  margin-left: 10%;
+  width: 30%;
+
+  text-align: center;
+  float: left;
+}
+
+.selected {
+  background-color: #cfd8dc !important;
+  color: white;
+}
+
+.viewBtn {
+  margin-top: 10%;
+  background-color: #242f34;
+  color: #ffffff;
+}
+
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.heroes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #eee;
+  margin: 0.5em;
+  padding: 0.3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+
+.heroes li:hover {
+  color: #607d8b;
+  background-color: #ddd;
+  left: 0.1em;
+  opacity: 95%;
+  transform: scale(1.1);
+}
+
+.heroes li.selected:hover {
+  background-color: #bbd8dc !important;
+  color: white;
+}
+
+.heroes .text {
+  position: relative;
+  top: -3px;
+}
+
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607d8b;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: 0.8em;
+  border-radius: 4px 0 0 4px;
+  float: left;
+}
+
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  float: right;
+  margin-top: 2px;
+  margin-right: 0.8em;
+  background-color: gray !important;
+  color: white;
+}
+
+/*-----------------------------------------------------*/
+
+@media (max-width: 901px) {
+  h1 {
+    text-align: center;
+    color: #455a64;
+    margin-top: 5%;
+  }
+
+  h2 {
+    color: #242f34;
+  }
+
+  .addHeroes {
+    margin-top: 3.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #607d8b;
+  }
+
+  .addBtn {
+    margin-top: 1.5em;
+    background-color: #455a64;
+    color: #ffffff;
+    padding: 4px 15px;
+    border-radius: 5px;
+    margin-right: 1%;
+    font-weight: bold;
+  }
+
+  .mo {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .a {
+    margin-bottom: 10px;
+  }
+  .info {
+    display: inline-block;
+    margin-top: 5%;
+  }
+
+  .display-info label {
+    color: #242f34;
+    float: left;
+    text-align: left;
+  }
+
+  .display-info span {
+    float: right;
+    color: #455a64;
+  }
+
+  .bios {
+    width: 400px;
+  }
+
+  .display-info .txt {
+    float: left;
+    text-align: left;
+    margin-top: 3px;
+  }
+
+  .main {
+    margin-top: 3%;
+    width: 80%;
+  }
+
+  .selected {
+    background-color: #cfd8dc !important;
+    color: white;
+  }
+
+  .viewBtn {
+    margin-top: 20px;
+    background-color: #242f34;
+    color: #ffffff;
+  }
+
+  .heroes {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0px;
+  }
+
+  .heroes li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #eee;
+    margin: 0.5em;
+    padding: 0.3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+
+  .heroes li:hover {
+    color: #607d8b;
+    background-color: #ddd;
+    left: 0.1em;
+  }
+
+  .heroes li.selected:hover {
+    background-color: #bbd8dc !important;
+    color: white;
+  }
+
+  .heroes .text {
+    position: relative;
+    top: -3px;
+  }
+
+  .heroes .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607d8b;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: 0.8em;
+    border-radius: 4px 0 0 4px;
+    float: left;
+  }
+
+  button {
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #cfd8dc;
+  }
+
+  button.delete {
+    float: right;
+    margin-top: 2px;
+    margin-right: 0.8em;
+    background-color: gray !important;
+    color: white;
+  }
+}
+
+@media (max-width: 500px) {
+  .bios {
+    width: 280px;
+  }
+
+  .addHeroes {
+    margin-top: 2.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #607d8b;
+  }
+}

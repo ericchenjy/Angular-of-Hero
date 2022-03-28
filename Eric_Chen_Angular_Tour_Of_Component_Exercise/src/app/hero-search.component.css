@@ -1,0 +1,109 @@
+.search-result {
+  border-bottom: 1px #242f34;
+  border-left: 1px #242f34;
+  border-right: 1px #242f34;
+  width: 14%;
+
+  padding: 5px;
+  margin-left: 84.6%;
+  background-color: white;
+  cursor: pointer;
+  font-size: 100%;
+}
+
+.search-result:hover {
+  color: #eee;
+  background-color: #242f34;
+}
+
+#search-box {
+  height: 16px;
+  width: 15%;
+  margin-left: 10%;
+  border-color: #242f34;
+  border-style: solid;
+  border-radius: 8px;
+  float: right;
+}
+
+@media (max-width: 721px) {
+  .search-result {
+    border-bottom: 1px #242f34;
+    border-left: 1px #242f34;
+    border-right: 1px #242f34;
+    width: 14%;
+    height: -16px;
+    padding: 5px;
+    margin-left: 84%;
+    background-color: white;
+    cursor: pointer;
+    font-size: 90%;
+  }
+}
+#search-box {
+  height: 16px;
+  width: 15%;
+  margin-left: 10%;
+  border-color: #242f34;
+  border-style: solid;
+  border-radius: 8px;
+  float: right;
+  font-size: 90%;
+}
+
+@media (max-width: 600px) {
+  .search-result {
+    border-bottom: 1px #242f34;
+    border-left: 1px #242f34;
+    border-right: 1px #242f34;
+    width: 14%;
+    height: -16px;
+    padding: 5px;
+    margin-left: 82%;
+    background-color: white;
+    cursor: pointer;
+    font-size: 80%;
+  }
+
+  .search-result:hover {
+    color: #eee;
+    background-color: #242f34;
+  }
+
+  #search-box {
+    height: 16px;
+    width: 18%;
+    margin-left: 10%;
+    border-color: #242f34;
+    border-style: solid;
+    border-radius: 8px;
+    float: right;
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 494px) {
+  .search-result {
+    border-bottom: 1px #242f34;
+    border-left: 1px #242f34;
+    border-right: 1px #242f34;
+    width: 14%;
+    height: -16px;
+    padding: 5px;
+    margin-left: 82%;
+    background-color: white;
+    cursor: pointer;
+    font-size: 70%;
+  }
+
+  #search-box {
+    height: 16px;
+    width: 18%;
+    margin-left: 10%;
+    border-color: #242f34;
+    border-style: solid;
+    border-radius: 8px;
+    float: right;
+    font-size: 60%;
+  }
+}
